@@ -1,0 +1,60 @@
+.projects {
+  &__card {
+    padding: 0;
+
+    .card-body {
+      padding: 1.5rem;
+    }
+  }
+
+  &__name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+
+    a {
+      color: #fafafa;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #dc2626;
+      }
+    }
+  }
+
+  &__desc {
+    color: #a3a3a3;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-bottom: 1rem;
+  }
+
+  &__tech {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+    background-color: rgba(220, 38, 38, 0.12) !important;
+    color: #f87171 !important;
+    border: 1px solid rgba(220, 38, 38, 0.2);
+  }
+
+  &__link {
+    color: #dc2626;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #f87171;
+    }
+  }
+}

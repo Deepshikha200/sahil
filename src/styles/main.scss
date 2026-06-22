@@ -1,0 +1,17 @@
+@use 'variables' as v;
+@use 'bootstrap/scss/bootstrap' with (
+  $primary: v.$primary,
+  $secondary: v.$secondary,
+  $danger: v.$danger,
+  $dark: v.$dark,
+  $light: v.$light,
+  $body-bg: v.$body-bg,
+  $body-color: v.$body-color,
+  $headings-color: v.$headings-color,
+  $link-color: v.$link-color,
+  $link-hover-color: v.$link-hover-color,
+  $border-color: v.$border-color,
+  $border-radius: v.$border-radius,
+  $font-family-base: v.$font-family-base,
+);
+@use 'bootstrap-overrides';

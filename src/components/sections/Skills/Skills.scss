@@ -1,0 +1,44 @@
+.skills {
+  &__card {
+    background: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 100%;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: rgba(220, 38, 38, 0.4);
+    }
+  }
+
+  &__category {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #2d2d2d;
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.4em 0.75em;
+    background-color: #262626 !important;
+    border: 1px solid #333;
+    color: #d4d4d4 !important;
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: #dc2626;
+      color: #f87171 !important;
+    }
+  }
+}

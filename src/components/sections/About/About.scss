@@ -1,0 +1,99 @@
+.about {
+  &__summary {
+    color: #a3a3a3;
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  &__subheading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #a3a3a3;
+      line-height: 1.6;
+      font-size: 0.9375rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.55em;
+        width: 6px;
+        height: 6px;
+        background-color: #dc2626;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__card {
+    background: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border-left: 3px solid #dc2626;
+  }
+
+  &__edu-item {
+    margin-bottom: 1.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__edu-degree {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin-bottom: 0.25rem;
+  }
+
+  &__edu-school {
+    font-size: 0.875rem;
+    color: #a3a3a3;
+    margin-bottom: 0.125rem;
+  }
+
+  &__edu-meta {
+    font-size: 0.8125rem;
+    color: #737373;
+    margin: 0;
+  }
+
+  &__cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      color: #a3a3a3;
+      font-size: 0.9375rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #2d2d2d;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

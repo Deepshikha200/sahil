@@ -1,0 +1,42 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  overflow-x: hidden;
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.section {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+
+  &--alt {
+    background-color: #0a0a0a;
+  }
+}
+
+.btn-primary {
+  &:hover,
+  &:focus {
+    background-color: color.adjust($primary, $lightness: -8%);
+    border-color: color.adjust($primary, $lightness: -8%);
+  }
+}
+
+.btn-outline-danger {
+  &:hover {
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+  }
+}

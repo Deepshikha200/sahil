@@ -1,0 +1,9 @@
+@mixin section-padding {
+  padding: 5rem 0;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
