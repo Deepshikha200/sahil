@@ -24,7 +24,21 @@ const Experience = () => {
                     <p className="experience__company">
                       {job.company}
                       {job.client && (
-                        <span className="experience__client"> &mdash; {job.client}</span>
+                        <span className="experience__client">
+                          {' '}&mdash;{' '}
+                          {job.clientLink ? (
+                            <a
+                              href={job.clientLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="experience__client-link"
+                            >
+                              {job.client}
+                            </a>
+                          ) : (
+                            job.client
+                          )}
+                        </span>
                       )}
                     </p>
                   </div>
@@ -35,7 +49,7 @@ const Experience = () => {
                   <p className="experience__stack">{job.stack}</p>
                 )}
 
-                {job.link && (
+                {job.link && !job.clientLink && (
                   <a
                     href={job.link}
                     target="_blank"

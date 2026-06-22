@@ -6,7 +6,8 @@ export const profile = {
   email: 'sahilsahu856@gmail.com',
   linkedin: 'https://linkedin.com/in/con-sahil-sahu',
   github: 'https://github.com/sahilz123',
-  relocation: 'Open to Relocation (Poland/EU) – Visa Sponsorship Required',
+  relocation: 'Open to Relocation (PO/EU/GE) ',
+  relocation2:'Visa Sponsorship Required',
 
   summary:
     'Full-stack .NET engineer with 2.5+ years of experience building scalable, production-grade systems using .NET 6/8, C#, ASP.NET Core, React, PostgreSQL, MS SQL Server, RabbitMQ, and Azure. Experience spans enterprise SaaS platforms and government enterprise systems, including distributed messaging, OpenIddict-based authentication, SSRS/RDL reporting, and modernization of legacy platforms to EF Core 8. Known for owning critical modules end-to-end, improving system performance, delivering client-facing features, and building clean, maintainable architectures.',
@@ -14,39 +15,43 @@ export const profile = {
   skills: [
     {
       category: 'Languages & Frameworks',
-      items: ['C#', '.NET 6/8', 'ASP.NET Core', 'React.js', 'Blazor'],
+      items: ['C#', '.NET 6/8', 'ASP.NET Core', 'React.js', 'Blazor', 'Razor Pages', 'JavaScript', 'LINQ'],
     },
     {
       category: 'Architecture & Backend',
-      items: ['Microservices', 'REST APIs', 'Clean Architecture', 'SOLID', 'Dependency Injection'],
+      items: ['Microservices', 'REST APIs', 'Clean Architecture', 'SOLID', 'Dependency Injection', 'Entity Framework', 'MVC'],
     },
     {
       category: 'Cloud & Messaging',
-      items: ['Azure Functions', 'Azure Service Bus', 'RabbitMQ', 'ElasticSearch'],
+      items: ['Microsoft Azure', 'Azure Functions', 'Azure Service Bus', 'RabbitMQ', 'ElasticSearch', 'Distributed Systems', 'Message Queues'],
     },
     {
       category: 'Integrations',
-      items: ['SendGrid', 'Twilio', 'Webhooks', 'AWS S3'],
+      items: ['SendGrid', 'Twilio', 'Infobip', 'Webhooks', 'AWS S3', 'WhatsApp', 'RCS'],
     },
     {
       category: 'Authentication & Security',
-      items: ['OpenIddict', 'OAuth2', 'JWT', 'Encrypted Tokens', 'RBAC'],
+      items: ['OpenIddict', 'OAuth2', 'JWT', 'Encrypted Tokens', 'RBAC', 'Access/Refresh Tokens', 'Single Sign-On (SSO)'],
     },
     {
       category: 'Databases',
-      items: ['PostgreSQL', 'MS SQL Server', 'EF Core 8', 'EF6', 'Query Optimization'],
+      items: ['PostgreSQL', 'MS SQL Server', 'EF Core 8', 'EF6', 'Query Optimization', 'Database Design', 'Stored Procedures', 'Migrations'],
     },
     {
       category: 'Reporting',
-      items: ['SSRS', 'RDL Reports'],
+      items: ['SSRS', 'RDL Reports', 'SQL Server Reporting Services', 'Compliance Reporting'],
+    },
+    {
+      category: 'Frontend',
+      items: ['React.js', 'HTML5', 'CSS3', 'SCSS', 'Responsive UI', 'Bootstrap'],
     },
     {
       category: 'DevOps & Tooling',
-      items: ['CI/CD', 'Azure Pipelines', 'GitHub Actions', 'Git', 'Docker', 'Splunk'],
+      items: ['CI/CD', 'Azure Pipelines', 'GitHub Actions', 'Git', 'Docker', 'Splunk', 'Observability', 'Correlation IDs'],
     },
     {
       category: 'Testing',
-      items: ['FakeItEasy', 'Moq', 'XUnit', 'TDD'],
+      items: ['FakeItEasy', 'Moq', 'XUnit', 'TDD', 'Unit Testing', 'Integration Testing'],
     },
   ],
 
@@ -55,8 +60,8 @@ export const profile = {
       role: 'Software Engineer',
       company: 'Outworks Solutions',
       period: 'Feb 2026 – Present',
-      client: 'Punjab State Warehouse Corporation (Govt. of Punjab)',
-      link: 'https://pswc.in/',
+      client: 'Punjab State Warehouse Corporation',
+      clientLink: 'https://pswc.in/',
       stack: 'ASP.NET Core, .NET 6, MS SQL Server, SSRS/RDL',
       highlights: [
         'Own and maintain complete modules for PSWC enterprise systems, working directly with government stakeholders on requirements, deployment, and support.',
@@ -84,7 +89,7 @@ export const profile = {
         },
         {
           name: 'OfferCraft Loyalty Platform',
-          link: 'https://offercraft.compunnel.com/rewards',
+          link: 'https://www.nrttech.com/products/offercraft/',
           stack: '.NET 8, EF Core 8, AWS S3, Splunk',
           highlights: [
             'Modernizing a large client loyalty system, migrating EF6 modules to EF Core 8.',
@@ -141,7 +146,7 @@ export const profile = {
     },
     {
       name: 'OfferCraft Loyalty Platform',
-      url: 'https://offercraft.compunnel.com/rewards',
+      url: 'https://www.nrttech.com/products/offercraft/',
       description:
         'Client loyalty system with campaigns, games, questionnaires, offers, rewards, and redemption flows.',
       stack: ['.NET 8', 'EF Core 8', 'AWS S3', 'Splunk'],
