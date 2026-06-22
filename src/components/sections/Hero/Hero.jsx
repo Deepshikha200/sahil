@@ -17,7 +17,12 @@ const Hero = () => {
               <span className="hero__location-icon">&#9679;</span>
               {profile.location}
             </p>
-            <p className="hero__relocation">{profile.relocation}</p>
+            <div className="hero__relocation-group">
+              <p className="hero__relocation">{profile.relocation}</p>
+              <p className="hero__relocation hero__relocation--secondary">
+                {profile.relocation2}
+              </p>
+            </div>
             <p className="hero__tagline">
               Building scalable, production-grade systems with .NET, React &amp; cloud technologies.
             </p>

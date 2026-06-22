@@ -6,11 +6,14 @@ export const profile = {
   email: 'sahilsahu856@gmail.com',
   linkedin: 'https://linkedin.com/in/con-sahil-sahu',
   github: 'https://github.com/sahilz123',
-  relocation: 'Open to Relocation (PO/EU/GE) ',
-  relocation2:'Visa Sponsorship Required',
+  relocation: 'Open to Relocation (Poland / European Union)',
+  relocation2: 'Visa Sponsorship Required',
 
-  summary:
-    'Full-stack .NET engineer with 2.5+ years of experience building scalable, production-grade systems using .NET 6/8, C#, ASP.NET Core, React, PostgreSQL, MS SQL Server, RabbitMQ, and Azure. Experience spans enterprise SaaS platforms and government enterprise systems, including distributed messaging, OpenIddict-based authentication, SSRS/RDL reporting, and modernization of legacy platforms to EF Core 8. Known for owning critical modules end-to-end, improving system performance, delivering client-facing features, and building clean, maintainable architectures.',
+  summary: [
+    'I am a full-stack .NET engineer passionate about building reliable, scalable software that solves real business problems. With 2.5+ years of hands-on experience across enterprise SaaS and government systems, I specialize in end-to-end module ownership — from database design and API development to React dashboards and production deployment.',
+    'My work spans high-throughput messaging platforms processing 1M+ messages/day, OpenIddict-based authentication systems, and large-scale loyalty platform modernization. I thrive in environments where I can take ownership, collaborate with stakeholders, and deliver clean, maintainable architectures using .NET 6/8, C#, ASP.NET Core, React, PostgreSQL, RabbitMQ, and Azure.',
+    'I am actively seeking opportunities in Poland and the European Union where I can contribute to impactful engineering teams and grow alongside experienced professionals building products at scale.',
+  ],
 
   skills: [
     {
@@ -39,7 +42,7 @@ export const profile = {
     },
     {
       category: 'Reporting',
-      items: ['SSRS', 'RDL Reports', 'SQL Server Reporting Services', 'Compliance Reporting'],
+      items: ['SSRS', 'RDL Reports', 'SQL Server Reporting Services'],
     },
     {
       category: 'Frontend',
@@ -59,7 +62,7 @@ export const profile = {
     {
       role: 'Software Engineer',
       company: 'Outworks Solutions',
-      period: 'Feb 2026 – Present',
+      period: 'Mar 2026 – Present',
       client: 'Punjab State Warehouse Corporation',
       clientLink: 'https://pswc.in/',
       stack: 'ASP.NET Core, .NET 6, MS SQL Server, SSRS/RDL',
@@ -74,7 +77,7 @@ export const profile = {
     {
       role: 'Associate Software Engineer',
       company: 'Compunnel Inc.',
-      period: 'April 2025 – Jan 2026',
+      period: 'May 2024 – Feb 2026',
       projects: [
         {
           name: 'Message Harbor',
@@ -99,17 +102,11 @@ export const profile = {
           ],
         },
       ],
-      highlights: [
-        'Built Azure Function consumers for Service Bus queues enabling scalable inter-service communication.',
-        'Developed internal Blazor/Razor admin tools.',
-        'Contributed to CI/CD automation using Azure Pipelines and GitHub Actions.',
-        'Strengthened testing culture using FakeItEasy, Moq, and clean testing patterns.',
-      ],
     },
     {
       role: 'Trainee Software Engineer',
       company: 'Compunnel Inc.',
-      period: 'Jan 2024 – Jan 2025',
+      period: 'Jan 2024 – May 2024',
       projects: [
         {
           name: 'Message Harbor',
@@ -145,18 +142,18 @@ export const profile = {
       stack: ['.NET 6', 'React', 'RabbitMQ', 'PostgreSQL'],
     },
     {
+      name: 'Eximius AI',
+      url: 'https://eximius.ai',
+      description:
+        'Enabled the core messaging engine by leading Message Harbor\'s communication pipeline integration.',
+      stack: ['.NET 6', 'RabbitMQ', 'Microservices'],
+    },
+    {
       name: 'OfferCraft Loyalty Platform',
       url: 'https://www.nrttech.com/products/offercraft/',
       description:
         'Client loyalty system with campaigns, games, questionnaires, offers, rewards, and redemption flows.',
       stack: ['.NET 8', 'EF Core 8', 'AWS S3', 'Splunk'],
-    },
-    {
-      name: 'Sahil Identity Server',
-      url: 'https://github.com/sahilz123/SahilIdentityServer',
-      description:
-        'OpenIddict-based authentication platform with encrypted JWTs, SSO flows, and refresh-token automation.',
-      stack: ['.NET 8', 'OpenIddict', 'React', 'MS SQL'],
     },
     {
       name: 'PSWC Enterprise Systems',
@@ -166,11 +163,11 @@ export const profile = {
       stack: ['ASP.NET Core', '.NET 6', 'MS SQL Server', 'SSRS'],
     },
     {
-      name: 'Eximius AI',
-      url: 'https://eximius.ai',
+      name: 'Sahil Identity Server',
+      url: 'https://github.com/sahilz123/SahilIdentityServer',
       description:
-        'Enabled the core messaging engine by leading Message Harbor\'s communication pipeline integration.',
-      stack: ['.NET 6', 'RabbitMQ', 'Microservices'],
+        'OpenIddict-based authentication platform with encrypted JWTs, SSO flows, and refresh-token automation.',
+      stack: ['.NET 8', 'OpenIddict', 'React', 'MS SQL'],
     },
   ],
 
@@ -179,6 +176,13 @@ export const profile = {
     'Delivered the first OfferCraft module early, powering the client\'s initial live demo.',
     'Independently delivered a complex campaign/game/rewards workflow accepted with minimal revisions.',
     'Achieved ~35% latency reduction and stable 1M+ messages/day throughput in MCMS.',
+  ],
+
+  additionalResponsibilities: [
+    'Built Azure Function consumers for Service Bus queues enabling scalable inter-service communication.',
+    'Developed internal Blazor/Razor admin tools.',
+    'Contributed to CI/CD automation using Azure Pipelines and GitHub Actions.',
+    'Strengthened testing culture using FakeItEasy, Moq, and clean testing patterns.',
   ],
 
   education: [
@@ -196,7 +200,18 @@ export const profile = {
     },
   ],
 
-  certifications: ['Microsoft Certified: Azure AI Fundamentals (AI-900)'],
+  certifications: [
+    {
+      name: 'Microsoft Certified: Azure AI Fundamentals (AI-900)',
+      url: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/',
+    },
+  ],
+
+  leetcode: {
+    username: 'sahilz123',
+    profileUrl: 'https://leetcode.com/sahilz123/',
+    fallback: { total: 0, easy: 0, medium: 0, hard: 0 },
+  },
 
   navLinks: [
     { label: 'About', href: '#about' },

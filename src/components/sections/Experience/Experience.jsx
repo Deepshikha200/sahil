@@ -22,9 +22,9 @@ const Experience = () => {
                   <div>
                     <h3 className="experience__role">{job.role}</h3>
                     <p className="experience__company">
-                      {job.company}
+                      <span className="experience__company-name">{job.company}</span>
                       {job.client && (
-                        <span className="experience__client">
+                        <>
                           {' '}&mdash;{' '}
                           {job.clientLink ? (
                             <a
@@ -36,9 +36,9 @@ const Experience = () => {
                               {job.client}
                             </a>
                           ) : (
-                            job.client
+                            <span className="experience__client">{job.client}</span>
                           )}
-                        </span>
+                        </>
                       )}
                     </p>
                   </div>
@@ -94,16 +94,6 @@ const Experience = () => {
                   </div>
                 ))}
 
-                {job.highlights && job.projects && (
-                  <div className="experience__additional">
-                    <h4 className="experience__project-name">Additional Responsibilities</h4>
-                    <ul className="experience__list">
-                      {job.highlights.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </div>
             </div>
           ))}

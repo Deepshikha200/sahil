@@ -1,0 +1,102 @@
+.leetcode-stats {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--heading-color, #fafafa);
+    margin: 0;
+  }
+
+  &__profile {
+    font-size: 0.8125rem;
+    color: #ffa116;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: #ffb84d;
+      text-decoration: underline;
+    }
+  }
+
+  &__loading {
+    color: var(--text-muted, #a3a3a3);
+    font-size: 0.875rem;
+    margin: 0;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  &__chart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+
+  &__chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+  }
+
+  &__segment {
+    transition: stroke-dasharray 0.6s ease;
+  }
+
+  &__total-count {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffa116;
+    line-height: 1.2;
+  }
+
+  &__total-label {
+    font-size: 0.6875rem;
+    color: var(--text-muted, #a3a3a3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__legend {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  &__legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  &__legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &__legend-label {
+    flex: 1;
+    font-size: 0.8125rem;
+    color: var(--text-muted, #a3a3a3);
+    font-weight: 500;
+  }
+
+  &__legend-count {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--heading-color, #fafafa);
+  }
+}

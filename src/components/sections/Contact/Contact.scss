@@ -1,7 +1,7 @@
 .contact {
   &__card {
-    background: #1a1a1a;
-    border: 1px solid #2d2d2d;
+    background: var(--surface, #1a1a1a);
+    border: 1px solid var(--border, #2d2d2d);
     border-radius: 0.75rem;
     padding: clamp(1.5rem, 4vw, 2.5rem);
     text-align: center;
@@ -25,9 +25,9 @@
 
   &__item {
     padding: 1rem;
-    background: #141414;
+    background: var(--surface-deep, #141414);
     border-radius: 0.5rem;
-    border: 1px solid #262626;
+    border: 1px solid var(--border, #262626);
   }
 
   &__label {

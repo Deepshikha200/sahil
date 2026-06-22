@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { profile } from '../../../data/profile';
 import Button from '../../ui/Button/Button';
+import ThemeToggle from '../../ui/ThemeToggle/ThemeToggle';
 import './Header.scss';
 
 const Header = () => {
@@ -21,17 +22,21 @@ const Header = () => {
             <span className="header__brand-accent">S</span>S
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="main-nav" className="header__toggle" />
-          <Navbar.Collapse id="main-nav">
-            <Nav className="ms-auto align-items-lg-center gap-lg-1">
+          <div className="header__actions d-flex align-items-center gap-3 order-lg-2">
+            <ThemeToggle />
+            <Navbar.Toggle aria-controls="main-nav" className="header__toggle" />
+          </div>
+
+          <Navbar.Collapse id="main-nav" className="order-lg-1">
+            <Nav className="ms-lg-auto align-items-lg-center header__nav">
               {profile.navLinks.map((link) => (
                 <Nav.Link key={link.href} href={link.href} className="header__link">
                   {link.label}
                 </Nav.Link>
               ))}
-              <Button href="#contact" className="header__cta ms-lg-2 mt-3 mt-lg-0">
+              {/* <Button href="#contact" className="header__cta">
                 Hire Me
-              </Button>
+              </Button> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { profile } from '../../../data/profile';
 import SectionTitle from '../../ui/SectionTitle/SectionTitle';
+import LeetCodeStats from './LeetCodeStats';
 import './About.scss';
 
 const About = () => {
@@ -10,11 +11,23 @@ const About = () => {
         <SectionTitle subtitle="About Me" title="Professional Summary" />
         <Row className="g-4">
           <Col lg={7}>
-            <p className="about__summary">{profile.summary}</p>
+            <div className="about__summary">
+              {profile.summary.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+              ))}
+            </div>
             <div className="about__achievements">
               <h3 className="about__subheading">Key Achievements</h3>
               <ul className="about__list">
                 {profile.achievements.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="about__achievements">
+              <h3 className="about__subheading">Additional Responsibilities</h3>
+              <ul className="about__list">
+                {profile.additionalResponsibilities.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
@@ -38,9 +51,20 @@ const About = () => {
                 <h3 className="about__subheading">Certifications</h3>
                 <ul className="about__cert-list">
                   {profile.certifications.map((cert) => (
-                    <li key={cert}>{cert}</li>
+                    <li key={cert.name}>
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {cert.name}
+                      </a>
+                    </li>
                   ))}
                 </ul>
+              </div>
+              <div className="about__card">
+                <LeetCodeStats />
               </div>
             </div>
           </Col>

@@ -33,7 +33,7 @@ const contactItems = [
   },
   {
     label: 'Relocation',
-    value: profile.relocation,
+    value: `${profile.relocation} · ${profile.relocation2}`,
   },
 ];
 

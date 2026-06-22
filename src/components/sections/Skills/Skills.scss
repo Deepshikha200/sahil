@@ -1,7 +1,7 @@
 .skills {
   &__card {
-    background: #1a1a1a;
-    border: 1px solid #2d2d2d;
+    background: var(--surface, #1a1a1a);
+    border: 1px solid var(--border, #2d2d2d);
     border-radius: 0.5rem;
     padding: 1.5rem;
     height: 100%;
