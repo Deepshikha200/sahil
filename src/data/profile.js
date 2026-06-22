@@ -208,8 +208,8 @@ export const profile = {
   ],
 
   leetcode: {
-    username: 'sahilz123',
-    profileUrl: 'https://leetcode.com/sahilz123/',
+    username: 'sahilsahu-leet',
+    profileUrl: 'https://leetcode.com/sahilsahu-leet/',
     fallback: { total: 0, easy: 0, medium: 0, hard: 0 },
   },
 
