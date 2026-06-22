@@ -8,7 +8,7 @@
   }
 
   &__intro {
-    color: #a3a3a3;
+    color: var(--text-muted, #a3a3a3);
     font-size: 1.0625rem;
     line-height: 1.7;
     max-width: 560px;
@@ -42,12 +42,12 @@
 
   &__value {
     font-size: 0.9375rem;
-    color: #e5e5e5;
+    color: var(--text-body, #e5e5e5);
     text-decoration: none;
     word-break: break-word;
 
     &[href]:hover {
-      color: #f87171;
+      color: #dc2626;
     }
   }
 

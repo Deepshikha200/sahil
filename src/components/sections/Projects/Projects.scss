@@ -41,9 +41,9 @@
     font-size: 0.6875rem;
     font-weight: 500;
     padding: 0.35em 0.65em;
-    background-color: rgba(220, 38, 38, 0.12) !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(220, 38, 38, 0.2);
+    background-color: var(--tech-bg, rgba(220, 38, 38, 0.12)) !important;
+    color: var(--tech-text, #ffffff) !important;
+    border: 1px solid var(--tech-border, rgba(220, 38, 38, 0.2));
   }
 
   &__link {

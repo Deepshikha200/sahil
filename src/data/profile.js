@@ -11,8 +11,7 @@ export const profile = {
 
   summary: [
     'I am a full-stack .NET engineer passionate about building reliable, scalable software that solves real business problems. With 2.5+ years of hands-on experience across enterprise SaaS and government systems, I specialize in end-to-end module ownership — from database design and API development to React dashboards and production deployment.',
-    'My work spans high-throughput messaging platforms processing 1M+ messages/day, OpenIddict-based authentication systems, and large-scale loyalty platform modernization. I thrive in environments where I can take ownership, collaborate with stakeholders, and deliver clean, maintainable architectures using .NET 6/8, C#, ASP.NET Core, React, PostgreSQL, RabbitMQ, and Azure.',
-    'I am actively seeking opportunities in Poland and the European Union where I can contribute to impactful engineering teams and grow alongside experienced professionals building products at scale.',
+    'My work spans high-throughput messaging platforms processing 1M+ messages/day, OpenIddict-based authentication systems, and large-scale loyalty platform modernization. I thrive in environments where I can take ownership, collaborate with stakeholders, and deliver clean, maintainable architectures using .NET 6/8, C#, ASP.NET Core, React, PostgreSQL, RabbitMQ, and Azure. I am actively seeking opportunities in Poland and the European Union where I can contribute to impactful engineering teams and grow alongside experienced professionals building products at scale.',
   ],
 
   skills: [
@@ -203,7 +202,7 @@ export const profile = {
   certifications: [
     {
       name: 'Microsoft Certified: Azure AI Fundamentals (AI-900)',
-      url: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/',
+      url: 'https://learn.microsoft.com/en-us/users/sahilsahu-1624/credentials/bfed9b653d7983c0?ref=https%3A%2F%2Fwww.linkedin.com%2F',
     },
   ],
 

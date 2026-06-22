@@ -8,12 +8,16 @@
   --bg: #0f0f0f;
   --heading-color: #fafafa;
   --text-muted: #a3a3a3;
+  --text-body: #e5e5e5;
   --border: #2d2d2d;
   --header-bg: rgba(15, 15, 15, 0.85);
   --header-border: transparent;
   --period-bg: #262626;
   --period-border: #404040;
   --period-text: #d4d4d4;
+  --tech-bg: rgba(220, 38, 38, 0.12);
+  --tech-text: #ffffff;
+  --tech-border: rgba(220, 38, 38, 0.2);
 }
 
 [data-bs-theme='light'] {
@@ -23,12 +27,16 @@
   --bg: #fafafa;
   --heading-color: #171717;
   --text-muted: #525252;
+  --text-body: #262626;
   --border: #e5e5e5;
   --header-bg: rgba(255, 255, 255, 0.9);
   --header-border: #e5e5e5;
   --period-bg: #f5f5f5;
   --period-border: #d4d4d4;
   --period-text: #404040;
+  --tech-bg: #fee2e2;
+  --tech-text: #991b1b;
+  --tech-border: #fecaca;
 }
 
 html {
@@ -112,6 +120,24 @@ a {
   .projects__desc,
   .contact__intro {
     color: #525252;
+  }
+
+  .contact__value {
+    color: var(--text-body) !important;
+
+    &[href]:hover {
+      color: #dc2626 !important;
+    }
+  }
+
+  .projects__tech {
+    background-color: var(--tech-bg) !important;
+    color: var(--tech-text) !important;
+    border-color: var(--tech-border) !important;
+  }
+
+  .contact__actions .btn-outline-danger {
+    color: #dc2626;
   }
 
   .skills__card,
