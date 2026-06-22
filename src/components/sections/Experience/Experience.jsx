@@ -44,10 +44,19 @@ const Experience = () => {
                   </div>
                   <span className="experience__period">{job.period}</span>
                 </div>
-
-                {job.stack && (
-                  <p className="experience__stack">{job.stack}</p>
-                )}
+                <h4 className="experience__project-name">
+                  {job.clientLink ? (
+                    <a
+                      href={job.clientLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {job.name}
+                    </a>
+                  ) : (
+                    job.client
+                  )}
+                </h4>
 
                 {job.link && !job.clientLink && (
                   <a

@@ -64,6 +64,7 @@ export const profile = {
       period: 'Mar 2026 – Present',
       client: 'Punjab State Warehouse Corporation',
       clientLink: 'https://pswc.in/',
+      name: 'Punjab State Warehouse Corporation',
       stack: 'ASP.NET Core, .NET 6, MS SQL Server, SSRS/RDL',
       highlights: [
         'Own and maintain complete modules for PSWC enterprise systems, working directly with government stakeholders on requirements, deployment, and support.',
