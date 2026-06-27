@@ -23,23 +23,7 @@ const Experience = () => {
                     <h3 className="experience__role">{job.role}</h3>
                     <p className="experience__company">
                       <span className="experience__company-name">{job.company}</span>
-                      {job.client && (
-                        <>
-                          {' '}&mdash;{' '}
-                          {job.clientLink ? (
-                            <a
-                              href={job.clientLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="experience__client-link"
-                            >
-                              {job.client}
-                            </a>
-                          ) : (
-                            <span className="experience__client">{job.client}</span>
-                          )}
-                        </>
-                      )}
+                    
                     </p>
                   </div>
                   <span className="experience__period">{job.period}</span>
